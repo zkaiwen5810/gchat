@@ -31,7 +31,6 @@ INCLUDES += -I../App-Common/Source -I../Walnut/vendor/glm -I../Walnut/Walnut/Sou
 FORCE_INCLUDE +=
 ALL_CPPFLAGS += $(CPPFLAGS) -MD -MP $(DEFINES) $(INCLUDES)
 ALL_RESFLAGS += $(RESFLAGS) $(DEFINES) $(INCLUDES)
-# ALL_LDFLAGS += $(LDFLAGS) -L../Walnut/Walnut-Networking/vendor/GameNetworkingSockets/bin/Linux -L/usr/lib64 -m64
 ALL_LDFLAGS += $(LDFLAGS) -L../Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/bin/Linux -L/usr/lib64 -m64
 LINKCMD = $(CXX) -o "$@" $(OBJECTS) $(RESOURCES) $(ALL_LDFLAGS) $(LIBS)
 define PREBUILDCMDS
