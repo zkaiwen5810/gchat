@@ -6,6 +6,9 @@
 		"dockerfile": "Dockerfile"
 	},
 
+	"workspaceMount": "source=gchat,target=/workspace,type=volume",
+	"workspaceFolder": "/workspace",
+
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
